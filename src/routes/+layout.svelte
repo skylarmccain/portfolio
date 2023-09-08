@@ -4,7 +4,5 @@
     export let data;
 </script>
 
-<div>
-    <h1>Header Goes Here</h1>
-    <slot/>
-</div>
+<slot/>
+

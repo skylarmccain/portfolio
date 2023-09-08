@@ -1,12 +1,47 @@
-<div>
-    <h1 class="text-3xl font-bold underline">
-        Welcome to Home Page
-    </h1>
-    <button class="btn btn-primary">Button</button>
+<script>
+	import FaLinkedin from "svelte-icons/fa/FaLinkedin.svelte";
+	import FaGithub from "svelte-icons/fa/FaGithub.svelte";
+	import MemojiImage from "../static/images/Memoji.png";
+</script>
+
+<svelte:head>
+	<title>Skylar McCain - Main page</title>
+</svelte:head>
+<div class="snap-y snap-mandatory scroll-auto">
+	<div class="snap-center snap-always hero min-h-screen bg-base-200 scroll-my-[900px]">
+		<div class="hero-content flex-col lg:flex-row">
+			<img src={MemojiImage} class="px-12"/>
+			<div>
+				<h1 class="text-5xl font-bold">Hi, I'm Skylar! 👋</h1>
+				<p class="py-4 text-lg">
+					I am a software developer, passionate about building
+					products that are centered around the user experience.
+				</p>
+				<div class="flex flex-row gap-5">
+					<a href="https://github.com/skylarmccain" target="_blank" class="link">
+						<div class="icon">
+							<FaGithub />
+						</div>
+					</a>
+					<a href="https://www.linkedin.com/in/skylarmccain/" target="_blank" class="link">
+						<div class="icon">
+							<FaLinkedin />
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="bg-black snap-center min-h-screen snap-always">
+		<h1 class="text-5xl font-bold py-20">TEST</h1>
+	</section>
 </div>
 
-<style lang="postcss">
-    :global(html) {
-      background-color: theme(colors.gray.100);
-    }
-  </style>
+<style>
+
+	.icon {
+		cursor: pointer;
+		transition: color 0.2s ease-in-out;
+		width: 40px;
+	}
+</style>
