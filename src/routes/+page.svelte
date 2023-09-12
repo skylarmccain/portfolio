@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import FaLinkedin from "svelte-icons/fa/FaLinkedin.svelte";
 	import FaGithub from "svelte-icons/fa/FaGithub.svelte";
 	import MemojiImage from "../static/images/Memoji.png";
@@ -7,6 +8,7 @@
 
     let open = false;
 </script>
+
 
 <svelte:head>
 	<title>Skylar McCain - Main page</title>

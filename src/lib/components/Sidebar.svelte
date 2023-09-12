@@ -1,11 +1,13 @@
 <script>
+	 import { base } from '$app/paths';
+
 	export let open = false
 </script>
 
 <aside class="absolute bg-teal-900 justify-end flex" class:open>
 	<nav class="p-12 text-base-100 font-semibold text-5xl">
-		<a class="block hover:text-base-200 py-4 text-end" href="/">About</a>
-		<a class="block hover:text-base-200 py-4 text-end" href="projects">Projects</a>
+		<a class="block hover:text-base-200 py-4 text-end" href="{base}/">About</a>
+		<a class="block hover:text-base-200 py-4 text-end" href="{base}/projects">Projects</a>
 	</nav>
 </aside>
 
